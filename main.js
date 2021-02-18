@@ -37,6 +37,9 @@ const check = () => {
         ) {
             result = 'нолики';
             prepareResult(result);
+        }  else if (move == 9){
+            contentWrapper.innerHTML = `Ничья !`;
+            modalResult.style.display = 'block';
         }
     }
 }
